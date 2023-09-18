@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HGUtils" Version="2.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CybersourceNet_App\CybersourceNet_App.csproj" />
+    <ProjectReference Include="..\CybersourceNet_Common\CybersourceNet_Common.csproj" />
+    <ProjectReference Include="..\CybersourceNet_Data\CybersourceNet_Data.csproj" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1development_1json__JsonSchema="https://codemagic.io/codemagic-schema.json" /></VisualStudio></ProjectExtensions>
+
+</Project>

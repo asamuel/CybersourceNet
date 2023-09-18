@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!--<Nullable>enable</Nullable>-->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CyberSource.Rest.Client.NetStandard" Version="0.0.1.26" />
+    <PackageReference Include="HGUtils" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.21" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CybersourceNet_Data\CybersourceNet_Data.csproj" />
+  </ItemGroup>
+
+</Project>
