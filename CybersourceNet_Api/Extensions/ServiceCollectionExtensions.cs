@@ -17,6 +17,7 @@ namespace Microsoft.Extensions.DependencyInjection
                .AddTransient<IPayment, PaymentService>()
                .AddTransient<ICapture, CaptureService>()
                .AddTransient<IReversal, ReversalService>()
-               .AddTransient<IAuth, AuthService>();
+               .AddTransient<IAuth, AuthService>()
+               .AddTransient<ITransactionSearch, TransactionSearchService>();
     }
 }

@@ -28,6 +28,7 @@ namespace CybersourceNet_Api
                  validator.AddValidator<CaptureRequestViewModel, CaptureRequestValidator>();
                  validator.AddValidator<ReversalRequestViewModel, ReversalRequestValidator>();
                  validator.AddValidator<UserLoginRequestViewModel, UserLoginRequestValidator>();
+                 validator.AddValidator<CreateSearchRequestViewModel, CreateSearchRequestValidator>();
              });
 
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
