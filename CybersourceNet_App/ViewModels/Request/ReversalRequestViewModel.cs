@@ -5,18 +5,18 @@ namespace CybersourceNet_App.ViewModels.Request
     public class ReversalRequestViewModel
     {
         [JsonPropertyName("transactionId")]
-        public string TransactionId { get; set; }
+        public required string TransactionId { get; set; }
 
         [JsonPropertyName("clientReferenceInformationCode")]
-        public string ClientReferenceInformationCode { get; set; }
+        public required string ClientReferenceInformationCode { get; set; }
 
         [JsonPropertyName("reversalInformationReason")]
-        public string ReversalInformationReason { get; set; }
+        public required string ReversalInformationReason { get; set; }
 
         [JsonPropertyName("orderInformation")]
-        public OrderInformation OrderInformation { get; set; }
+        public required OrderInformation OrderInformation { get; set; }
 
         [JsonPropertyName("cybersourceConfiguration")]
-        public CybersourceConfiguration CybersourceConfiguration { get; set; }
+        public required CybersourceConfiguration CybersourceConfiguration { get; set; }
     }
 }

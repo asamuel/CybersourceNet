@@ -8,22 +8,22 @@ namespace CybersourceNet_App.ViewModels.Request
         public string AuthenticationType { get; set; } = "HTTP_SIGNATURE";
 
         [JsonPropertyName("merchantID")]
-        public string MerchantID { get; set; }
+        public required string MerchantID { get; set; }
 
         [JsonPropertyName("merchantKeyId")]
-        public string MerchantKeyId { get; set; }
+        public required string MerchantKeyId { get; set; }
 
         [JsonPropertyName("merchantsecretKey")]
-        public string MerchantsecretKey { get; set; }
+        public required string MerchantsecretKey { get; set; }
 
         [JsonPropertyName("useMetaKey")]
-        public string UseMetaKey { get; set; } = "false";
+        public required string UseMetaKey { get; set; } = "false";
 
         [JsonPropertyName("enableClientCert")]
-        public string EnableClientCert { get; set; } = "false";
+        public required string EnableClientCert { get; set; } = "false";
 
         [JsonPropertyName("runEnvironment")]
-        public string RunEnvironment { get; set; }
+        public required string RunEnvironment { get; set; }
     }
 }
 

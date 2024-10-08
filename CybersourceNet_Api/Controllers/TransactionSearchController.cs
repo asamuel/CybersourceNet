@@ -12,7 +12,7 @@ namespace CybersourceNet_Api.Controllers
     public class TransactionSearchController
     {
         private readonly ITransactionSearch _transactionSearch;
-        public TransactionSearchController(ITransactionSearch  transactionSearch)
+        public TransactionSearchController(ITransactionSearch transactionSearch)
         {
             _transactionSearch = transactionSearch;
         }

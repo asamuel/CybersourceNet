@@ -6,21 +6,21 @@ namespace CybersourceNet_App.ViewModels.Request
     {
 
         [JsonPropertyName("clientReferenceInformationCode")]
-        public string ClientReferenceInformationCode { get; set; }
+        public required  string ClientReferenceInformationCode { get; set; }
 
         [JsonPropertyName("captureTrueForProcessPayment")]
         public Boolean CaptureTrueForProcessPayment { get; set; } = false;
 
         [JsonPropertyName("paymentInformationCard")]
-        public PaymentInformationCard PaymentInformationCard { get; set; }
+        public required PaymentInformationCard PaymentInformationCard { get; set; }
 
         [JsonPropertyName("orderInformation")]
-        public OrderInformation OrderInformation { get; set; }
+        public required OrderInformation OrderInformation { get; set; }
 
         [JsonPropertyName("orderInformationBillTo")]
-        public OrderInformationBillTo OrderInformationBillTo { get; set; }
+        public required OrderInformationBillTo OrderInformationBillTo { get; set; }
 
         [JsonPropertyName("cybersourceConfiguration")]
-        public CybersourceConfiguration CybersourceConfiguration { get; set; }
+        public required CybersourceConfiguration CybersourceConfiguration { get; set; }
     }
 }

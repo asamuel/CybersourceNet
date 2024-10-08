@@ -43,7 +43,7 @@ namespace CybersourceNet_Api
                     ValidateIssuerSigningKey = true,
                     ValidAudience = builder.Configuration["JwtConfig:Audience"],
                     ValidIssuer = builder.Configuration["JwtConfig:Issuer"],
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JwtConfig:Key"])),
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JwtConfig:Key"]??"defaultKEY")),
                     ClockSkew = TimeSpan.Zero
                 };
             });

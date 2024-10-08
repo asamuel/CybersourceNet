@@ -3,7 +3,8 @@ using System.Text.Json.Serialization;
 
 namespace CybersourceNet_App.ViewModels.Response
 {
-    public class CreateSearchCodeResponse {
+    public class CreateSearchCodeResponse
+    {
         [JsonPropertyName("rFlag")]
         public string? RFlag { get; set; }
 
@@ -22,10 +23,10 @@ namespace CybersourceNet_App.ViewModels.Response
         public string? ApprovalCode { get; set; }
 
         [JsonPropertyName("cardSuffix")]
-        public string? CardSuffix { get; set; }        
+        public string? CardSuffix { get; set; }
 
         [JsonPropertyName("applications")]
-        public List<Application> ApplicationsList { get; set; }
+        public List<Application>? ApplicationsList { get; set; }
     }
 
     public class Application : CreateSearchCodeResponse
@@ -42,4 +43,4 @@ namespace CybersourceNet_App.ViewModels.Response
         [JsonPropertyName("returnCode")]
         public int? ReturnCode { get; set; }
     }
-    }
+}

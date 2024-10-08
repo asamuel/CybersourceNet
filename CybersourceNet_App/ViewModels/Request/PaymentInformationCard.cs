@@ -5,12 +5,12 @@ namespace CybersourceNet_App.ViewModels.Request
     public class PaymentInformationCard
     {
         [JsonPropertyName("cardNumber")]
-        public string CardNumber { get; set; }
+        public required string CardNumber { get; set; }
 
         [JsonPropertyName("cardExpirationMonth")]
-        public string CardExpirationMonth { get; set; }
+        public required string CardExpirationMonth { get; set; }
 
         [JsonPropertyName("cardExpirationYear")]
-        public string CardExpirationYear { get; set; }
+        public required string CardExpirationYear { get; set; }
     }
 }

@@ -23,7 +23,7 @@ namespace CybersourceNet_App.Services
                 user => user.Username.ToLower() == userLoginViewModel.Username.ToLower()
                 && user.Password == userLoginViewModel.Password);
 
-            return user;
+            return user?? new UserModel();
         }
 
         public string GenerateToken(UserModel userModel)
