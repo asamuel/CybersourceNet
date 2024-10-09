@@ -6,18 +6,19 @@ using IResult = HGUtils.Common.Interfaces.IResult;
 
 namespace CybersourceNet_Api.Controllers
 {
-    [Route("api/v1/[controller]")]
+    [Route("api/v1/payment")]
     [ApiController]
     [Authorize(Roles = "admin")]
     public class TransactionSearchController
     {
+
         private readonly ITransactionSearch _transactionSearch;
         public TransactionSearchController(ITransactionSearch transactionSearch)
         {
             _transactionSearch = transactionSearch;
         }
 
-        [HttpPost("create")]
+        [HttpPost("search")]
         public async Task<IResult> CreateSearch([FromBody] CreateSearchRequestViewModel createSearchRequestViewModel) =>
            await _transactionSearch.CreateSearch(createSearchRequestViewModel);
     }
